@@ -1,4 +1,9 @@
 from keycraft.clients.cli_client import CliClient
 
-if __name__ == "__main__":
+
+def main():
     CliClient().run()
+
+
+if __name__ == "__main__":
+    main()
