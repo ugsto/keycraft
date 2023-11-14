@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "keycraft"
+version = "0.1.0"
+description = "Keycraft is a Python-based automation tool designed to streamline the configuration of Keycloak. It facilitates the setup of realms and clients in Keycloak, handling both authentication and authorization configurations. The tool automates the process of creating realms and clients, and outputs a JSON file containing essential details needed for APIs to interact with Keycloak as an identity provider. This tool is particularly useful for developers and system administrators looking to quickly integrate Keycloak into their authentication and authorization workflows."
+authors = ["André (ugsto) Bortoli <andre.ugsto@proton.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+keycraft = "keycraft.main:main"
